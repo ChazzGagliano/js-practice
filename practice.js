@@ -1,8 +1,13 @@
-var array = [1, 2, 3, 4, 5]
-array.push(7);
-array.push(8);
+var array = ["apple", "bottom", "jeans"]
+i = 0
+while (i < array.length) {
+    array[i] = array[i].toUpperCase();
+    console.log(array[i]);
+    i += 1;
+}
 
-console.log(array);
+
+
 
 
 

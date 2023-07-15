@@ -1,11 +1,14 @@
-$sum = 0
-def total(array)
+$max = 0
+
+def high(array)
     array.each do |number|
-        $sum += number
+        if number > $max
+            $max = number
+        end
     end
-    return $sum
+    return $max
 end
 
-array = [3, 4, 7, 8]
+array = [10, 4, 7, 8]
 
-p total(array)
+p high(array)
