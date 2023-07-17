@@ -1,14 +1,5 @@
-$max = 0
+shirt = {"brand" => "nike", "color" => "blue", "size" => "xl"}
 
-def high(array)
-    array.each do |number|
-        if number > $max
-            $max = number
-        end
-    end
-    return $max
-end
-
-array = [10, 4, 7, 8]
-
-p high(array)
+p shirt["brand"]
+p shirt["color"]
+p shirt["size"]
