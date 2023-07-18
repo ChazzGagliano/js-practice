@@ -1,10 +1,15 @@
-var person = [
-    {firstName: "John", lastName: "Stockton", email: "Stockton@email.com"},
-    {firstName: "Michael", lastName: "Jordan", email: "likemike@email.com"},
-    {firstName: "Charles", lastName: "Barkley", email: "chuck@email.com"}
+var laptop = [
+{brand: "lenovo", model: "thinkpad", year: 2019},
+{brand: "apple", model: "pro", year: 2017},
+{brand: "apple", model: "air", year: 2020}
 ]
-console.log(person[0].firstName);
-console.log(person[0].lastName);
-console.log(person[0].email)
+
+console.log(laptop[1].model)
+
+
+
+
+   
+
 
 
