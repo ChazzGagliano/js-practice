@@ -1,15 +1,5 @@
-var laptop = [
-{brand: "lenovo", model: "thinkpad", year: 2019},
-{brand: "apple", model: "pro", year: 2017},
-{brand: "apple", model: "air", year: 2020}
-]
+function math(number) {
+    return (number * 10) + 30
+}
 
-console.log(laptop[1].model)
-
-
-
-
-   
-
-
-
+console.log(math(5))
