@@ -1,14 +1,13 @@
-$count = 0
-
-def frequence(array)
+def starts_with(array)
+    count = 0
     array.each do |string|
-        if string[0] == "s"
-            $count += 1
+        if string[0] == "a"
+            count += 1
         end
     end
-    return $count
+    return count
 end
 
-array = ["sword", "apple", "slide", "super", "candy"]
-
-p frequence(array)
+array = ["apple", "bottom", "apricot"]
+result = starts_with(array)
+p result

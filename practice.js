@@ -1,5 +1,7 @@
-function math(number) {
-    return (number * 10) + 30
-}
+var strings = ["hello", "goodbye"]
+var array = []
+strings.forEach(function (string) {
+    array.push(string.toUpperCase())
+})
 
-console.log(math(5))
+console.log(array);
