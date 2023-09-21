@@ -1,13 +1,14 @@
-def starts_with(array)
-    count = 0
-    array.each do |string|
-        if string[0] == "a"
-            count += 1
-        end
+# Write a function that returns the sum of all numbers in a given array.
+
+def sum_array(array)
+    sum = 0
+
+    array.each do |number|
+        sum += number
     end
-    return count
+    return sum
 end
 
-array = ["apple", "bottom", "apricot"]
-result = starts_with(array)
-p result
+array = [1, 2, 3, 4]
+
+p sum_array(array)
