@@ -1,17 +1,15 @@
-# Given an array of numbers, write a function that returns a new array that contains all numbers from the original array that are less than 100.
+# Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
 
-
-def less_than(array)
+def double(array)
     new_array = []
+
     array.each do |number|
-        if number < 100
-            new_array << number
-        end
+        number *= 2
+        new_array << number
     end
-
     return new_array
-
 end
 
-array = [99, 101, 88, 4, 2000, 50]
-p less_than(array)
+array = [4, 2, 5, 99, -4]
+p double(array)
+
