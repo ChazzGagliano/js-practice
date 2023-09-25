@@ -1,14 +1,12 @@
-# Write a function that returns the greatest value from an array of numbers.
+# Write a function that accepts an array of numbers and returns the product of all the numbers.
 
-def max_number(array)
-    max = 0
+def total(array)
+    product = 1
     array.each do |number|
-        if number > max
-            max = number
-        end
+        product *= number
     end
-    return max
+    return product
 end
 
-array = [5, 17, -4, 20, 12]
-p max_number(array)
+array = [1, 2, 3, 4]
+p total(array)
