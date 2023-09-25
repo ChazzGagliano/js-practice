@@ -1,12 +1,12 @@
-# Write a function that accepts an array of numbers and returns the product of all the numbers.
 
-def total(array)
-    product = 1
-    array.each do |number|
-        product *= number
-    end
-    return product
+
+# Given an array, write a function that returns an array that contains the original array’s values in reverse.
+
+
+def reverse(array)
+    return array.reverse
 end
 
-array = [1, 2, 3, 4]
-p total(array)
+
+array = [1, 2, 3, 4, 5]
+p reverse(array)
