@@ -1,15 +1,14 @@
-# Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
+# Write a function that returns the greatest value from an array of numbers.
 
-
-def double(array)
-    new_array = []
+def max_number(array)
+    max = 0
     array.each do |number|
-        number *= 2
-        new_array << number
+        if number > max
+            max = number
+        end
     end
-    return new_array
+    return max
 end
 
-
-array = [4, 2, 5, 99, -4]
-p double(array)
+array = [5, 17, -4, 20, 12]
+p max_number(array)
