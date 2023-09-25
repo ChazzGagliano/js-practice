@@ -1,12 +1,14 @@
+function sumArray(array) {
+    let sum = 0
+    i = 0
 
-function doubleArrayValues(arr) {
-  const doubledArray = arr.map(function (value) {
-    return value * 2;
-  });
-  return doubledArray;
+    while (i < array.length) {
+    sum += array[i]
+    i += 1
+    }
+    return sum
 }
 
-
-const inputArray = [4, 2, 5, 99, -4];
-const doubledArray = doubleArrayValues(inputArray);
-console.log(doubledArray); 
+const numbers = [1, 2, 3, 4, 5]
+const result = sumArray(numbers);
+console.log(result)
