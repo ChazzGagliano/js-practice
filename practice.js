@@ -1,14 +1,13 @@
-
-function productArray(arr) {
-    let product = 1;
-    let i = 0;
-    while (i < arr.length) {
-      product *= arr[i];
-      i++;
+function sumArray(arr) {
+    let i = 0
+    let sum = 0
+    while ( i < arr.length) {
+        sum += arr[i]
+        i ++ 
     }
-    return product;
-  }
+    return sum
+}
 
-  const numbers = [1, 2, 3, 4, 5];
-  const result = productArray(numbers);
-  console.log(result); 
+ const arr = [1, 2, 3, 4]
+ const result = sumArray(arr)
+ console.log(result)
