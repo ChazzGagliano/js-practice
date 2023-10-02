@@ -1,15 +1,11 @@
-
-def sum_array(array)
-    sum = 0
+def productArr(array)
+    product = 1
     array.each do |number|
-        sum += number
+        product *= number
     end
-    return sum
+    return product
 end
 
-array = [1, 2, 3, 4, 5]
-p sum_array(array)
-
-
-
+array = [1, 2, 3, 4]
+p productArr(array)
 
