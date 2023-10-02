@@ -1,11 +1,12 @@
-def productArr(array)
-    product = 1
+def max_number(array)
+    max = 0
     array.each do |number|
-        product *= number
+        if number > max
+            max = number
+        end
     end
-    return product
+    return max
 end
 
-array = [1, 2, 3, 4]
-p productArr(array)
-
+array = [5, 17, -4, 20, 12]
+p max_number(array)

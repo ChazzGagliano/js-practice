@@ -1,13 +1,16 @@
-function productArr(arr) {
-    product = 1
-    i = 0
+function max_number(arr) {
+    let max = arr[0]
+    let i = 0
     while (i < arr.length) {
-        product *= arr[i]
+        if (arr[i] > max) {
+            max = arr[i]
+        }
         i ++
     }
-    return product
+    return max
 }
 
-const arr = [1, 2, 3, 4]
-result = productArr(arr)
-console.log(result)
+
+const inputArray = [5, 17, -4, 20, 12];
+const result = max_number(inputArray);
+console.log(result); 
