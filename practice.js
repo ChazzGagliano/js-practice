@@ -1,16 +1,13 @@
-function max_number(arr) {
-    let max = arr[0]
+function sum_arr(arr) {
+    let sum = 0
     let i = 0
     while (i < arr.length) {
-        if (arr[i] > max) {
-            max = arr[i]
-        }
+        sum += arr[i]
         i ++
     }
-    return max
+    return sum
 }
 
-
-const inputArray = [5, 17, -4, 20, 12];
-const result = max_number(inputArray);
-console.log(result); 
+arr = [1, 2, 3, 4]
+result = sum_arr(arr)
+console.log(result)
