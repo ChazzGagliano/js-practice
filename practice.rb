@@ -1,12 +1,12 @@
-def max_number(array)
-    max = 0
-    array.each do |number|
-        if number > max
-            max = number
+def start_with_a(array)
+    count = 0
+    array.each do |string|
+        if string[0] == "a"
+            count += 1
         end
     end
-    return max
+    return count
 end
 
-array = [5, 17, -4, 20, 12]
-p max_number(array)
+array = ["apple", "orange", "axe", "fence"]
+p start_with_a(array)
