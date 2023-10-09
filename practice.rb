@@ -1,12 +1,10 @@
-def start_with_a(array)
-    count = 0
-    array.each do |string|
-        if string[0] == "a"
-            count += 1
-        end
+def sum_array(array)
+    sum = 0
+    array.each do |number|
+        sum += number
     end
-    return count
+    return sum
 end
 
-array = ["apple", "orange", "axe", "fence"]
-p start_with_a(array)
+array = [1, 2, 3, 4]
+p sum_array(array)

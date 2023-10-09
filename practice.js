@@ -1,4 +1,4 @@
-function sum_arr(arr) {
+function sum_array(arr) {
     let sum = 0
     let i = 0
     while (i < arr.length) {
@@ -9,5 +9,5 @@ function sum_arr(arr) {
 }
 
 arr = [1, 2, 3, 4]
-result = sum_arr(arr)
+result = sum_array(arr)
 console.log(result)
