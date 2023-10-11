@@ -1,15 +1,13 @@
-function start_with(arr) {
-    let count = 0;
-    let i = 0
-    while (i < arr.length) {
-        if (arr[i].startsWith("a")) {
-            count += 1;
-        }
+function sum_array(array) {
+    let sum = 0
+    i = 0
+    while (i < array.length) {
+        sum += array[i]
         i ++
     }
-    return count;
+    return sum
 }
 
-const arr = ["apple", "bottom", "abercrombie"];
-const result = start_with(arr);
-console.log(result); 
+array = [1, 2, 3, 4]
+result = sum_array(array)
+console.log(result)
