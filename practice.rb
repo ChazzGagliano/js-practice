@@ -1,10 +1,13 @@
-def sum_array(array)
-    sum = 0
-    array.each do |number|
-        sum += number
+def string_array(array)
+    string = []
+    i = 0
+    while i < array.length 
+        array[i] = array[i].to_s
+        string << array[i].to_s
+        i += 1
     end
-    return sum
+    return string
 end
 
 array = [1, 2, 3, 4]
-p sum_array(array)
+p string_array(array)

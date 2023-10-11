@@ -1,13 +1,18 @@
-function sum_array(array) {
-    let sum = 0
+
+  
+  function stringArray(array) {
+    let string = []
     i = 0
     while (i < array.length) {
-        sum += array[i]
+        string.push(array[i].toString())
         i ++
     }
-    return sum
+    return string
 }
 
 array = [1, 2, 3, 4]
-result = sum_array(array)
+result = stringArray(array)
 console.log(result)
+
+
+
