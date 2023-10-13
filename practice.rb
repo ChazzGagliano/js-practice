@@ -1,10 +1,14 @@
-def product(array)
-    product = 1
-    array.each do |number|
-        product *= number
+def start_with(array) 
+    count = 0
+    i = 0
+    while i < array.length
+        if array[i][0] == "a"
+            count += 1
+        end
+        i += 1
     end
-    return product
+    return count
 end
 
-array = [8, 4, 2, 1]
-p product(array)
+array = ["apple", "orange", "april"]
+p start_with(array)

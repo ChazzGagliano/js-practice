@@ -1,14 +1,15 @@
-function pro_arr(arr) {
-    let product = 1
-    i = 0
-    while (i < arr.length) {
-        product *= arr[i]
+function start_with(array) {
+    let count = 0
+    let i = 0
+    while (i < array.length) {
+        if (array[i][0].startsWith("a")) {
+            count += 1
+        }
         i ++
     }
-    return product
+    return count
 }
-arr = [7, 3, 4, 5]
-result = pro_arr(arr)
+
+array = ["apple", "orange", "april"]
+result = start_with(array)
 console.log(result)
-
-
