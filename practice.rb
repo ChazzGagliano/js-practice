@@ -1,13 +1,10 @@
-def string_array(array)
-    string = []
-    i = 0
-    while i < array.length 
-        array[i] = array[i].to_s
-        string << array[i].to_s
-        i += 1
+def product(array)
+    product = 1
+    array.each do |number|
+        product *= number
     end
-    return string
+    return product
 end
 
-array = [1, 2, 3, 4]
-p string_array(array)
+array = [8, 4, 2, 1]
+p product(array)

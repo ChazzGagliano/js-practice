@@ -1,18 +1,14 @@
-
-  
-  function stringArray(array) {
-    let string = []
+function pro_arr(arr) {
+    let product = 1
     i = 0
-    while (i < array.length) {
-        string.push(array[i].toString())
+    while (i < arr.length) {
+        product *= arr[i]
         i ++
     }
-    return string
+    return product
 }
-
-array = [1, 2, 3, 4]
-result = stringArray(array)
+arr = [7, 3, 4, 5]
+result = pro_arr(arr)
 console.log(result)
-
 
 
