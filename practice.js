@@ -1,15 +1,14 @@
-function start_with(array) {
-    let count = 0
+function to_string(array) {
     let i = 0
+    new_array = []
     while (i < array.length) {
-        if (array[i][0].startsWith("a")) {
-            count += 1
-        }
-        i ++
+    array[i] = array[i].toString()
+    new_array.push(array[i])
+    i ++
     }
-    return count
+    return new_array
 }
 
-array = ["apple", "orange", "april"]
-result = start_with(array)
+array = [1, 2, 3, 4]
+result = to_string(array)
 console.log(result)
