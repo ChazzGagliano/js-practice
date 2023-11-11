@@ -1,13 +1,12 @@
-function sum_array(array) {
-    let sum = 0
+function product_array(array) {
+    let product = 1
     let i = 0
     while (i < array.length) {
-        sum += array[i]
+        product *= array[i]
         i ++
     }
-    return sum
+    return product 
 }
-
 array = [1, 2, 3, 4]
-result = sum_array(array)
+result = product_array(array)
 console.log(result)

@@ -1,12 +1,12 @@
-def sum_array(array)
-    sum = 0
+def product_(array)
+    product = 1
     i = 0
     while i < array.length
-        sum += array[i]
+        product *= array[i]
         i += 1
     end
-    return sum
+    return product
 end
 
-array = [1, 3, 5, 6]
-p sum_array(array)
+array = [1, 2, 3, 4]
+p product_(array)
