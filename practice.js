@@ -1,12 +1,18 @@
-function product_array(array) {
-    let product = 1
+function min_number(array) {
+    let minimum_number = array[0]
     let i = 0
+
     while (i < array.length) {
-        product *= array[i]
+
+        if (minimum_number > array[i]) {
+        minimum_number = array[i]
+        }
+        
         i ++
     }
-    return product 
+    return minimum_number
 }
-array = [1, 2, 3, 4]
-result = product_array(array)
+
+array = [2, 4, 8, 1]
+result = min_number(array)
 console.log(result)

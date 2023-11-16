@@ -1,12 +1,15 @@
-def product_(array)
-    product = 1
+def min_number(array)
+    minimum_number = array[0]
     i = 0
     while i < array.length
-        product *= array[i]
+        if minimum_number > array[i]
+            minimum_number = array[i]
+        end
         i += 1
     end
-    return product
+    return minimum_number
+
 end
 
-array = [1, 2, 3, 4]
-p product_(array)
+array = [2, 3, 8, 1]
+p min_number(array)
