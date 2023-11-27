@@ -1,14 +1,14 @@
-def starts_with(array)
-    count = 0
-    i = 0 
+def greater_than(array)
+    i = 0
+    new_array = []
     while i < array.length 
-        if array[i][0] == "b"
-            count += 1
+        if array[i] > 5
+            new_array << array[i]
         end
         i += 1
     end
-    return count
+    return new_array
 end
 
-array = ["boom", "chicka", "boom"]
-p starts_with(array)
+array = [1, 4, 6, 5, 8]
+p greater_than(array)
