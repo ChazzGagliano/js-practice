@@ -1,18 +1,17 @@
-function min_number(array) {
-    let minimum_number = array[0]
+function startWith(array) {
+    let count = 0
     let i = 0
 
     while (i < array.length) {
-
-        if (minimum_number > array[i]) {
-        minimum_number = array[i]
+        if (array[i][0].startsWith("a")) {
+            count += 1
         }
-        
         i ++
     }
-    return minimum_number
+    return count
 }
 
-array = [2, 4, 8, 1]
-result = min_number(array)
+array = ["apple", "bottle", "angry"]
+result = startWith(array)
 console.log(result)
+
