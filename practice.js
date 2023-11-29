@@ -1,15 +1,10 @@
-function greaterThan(array) {
-    let new_array = []
-    let i = 0
-    while(i < array.length) {
-        if (array[i] > 5) {
-            new_array.push(array[i])
-        }
-        i ++
-    }
-    return new_array
+function mapLoop(array) {
+    let sum = 0
+   array.map(function (num) {
+         sum += num
+    })
+    return sum
 }
-
-array = [1, 7, 3, 6]
-results = greaterThan(array)
+array = [1, 2, 3, 4]
+results = mapLoop(array)
 console.log(results)
