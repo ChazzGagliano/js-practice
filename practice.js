@@ -1,14 +1,16 @@
-function greaterThan(array) {
+function startwithB(array) {
+    let count = 0
     let i = 0
-    let new_array = []
+
     while (i < array.length) {
-        if (array[i] > 5) {
-            new_array.push(array[i])
+        if (array[i][0].startsWith("b")) {
+            count += 1
         }
         i ++
     }
-    return new_array
+    return count
 }
-array = [1, 4, 6, 5, 8]
-result = greaterThan(array)
-console.log(result)
+
+array = ["apple", "bottom", "jeans"]
+results = startwithB(array)
+console.log(results)
