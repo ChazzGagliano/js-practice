@@ -1,14 +1,12 @@
-def greater_than(array)
+def sum_array(array)
     i = 0
-    new_array = []
-    while i < array.length 
-        if array[i] > 5
-            new_array << array[i]
-        end
+    sum = 0
+    while i < array.length
+        sum += array[i]
         i += 1
     end
-    return new_array
+    return sum
 end
 
-array = [1, 4, 6, 5, 8]
-p greater_than(array)
+array = [1, 2, 3, 4]
+p sum_array(array)

@@ -1,10 +1,13 @@
-function mapLoop(array) {
+function sum_array(array) {
+    let i = 0
     let sum = 0
-   array.map(function (num) {
-         sum += num
-    })
+    while(i < array.length) {
+        sum += array[i]
+        i ++
+    }
     return sum
 }
+
 array = [1, 2, 3, 4]
-results = mapLoop(array)
-console.log(results)
+result = sum_array(array)
+console.log(sum_array(array))
