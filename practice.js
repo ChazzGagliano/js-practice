@@ -1,13 +1,15 @@
-function sum_array(array) {
+function maximus(array) {
     let i = 0
-    let sum = 0
+    let max_number = array[0]
     while(i < array.length) {
-        sum += array[i]
+        if (max_number < array[i]) {
+            max_number = array[i]
+        }
         i ++
     }
-    return sum
+    return max_number
 }
 
-array = [1, 2, 3, 4]
-result = sum_array(array)
-console.log(sum_array(array))
+array = [1, 2, 4, 5, 6, 3]
+result = maximus(array)
+console.log(maximus(array))

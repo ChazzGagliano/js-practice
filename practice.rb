@@ -1,12 +1,14 @@
-def sum_array(array)
+def maximus(array)
     i = 0
-    sum = 0
+    max_number = array[0]
     while i < array.length
-        sum += array[i]
+        if max_number < array[i]
+            max_number = array[i]
+        end
         i += 1
     end
-    return sum
+    return max_number
 end
 
-array = [1, 2, 3, 4]
-p sum_array(array)
+array = [1, 2, 4, 5, 6, 3]
+p maximus(array)
