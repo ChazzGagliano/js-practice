@@ -1,15 +1,14 @@
-function maximus(array) {
+function greater_than(array) {
+    let new_array = []
     let i = 0
-    let max_number = array[0]
     while(i < array.length) {
-        if (max_number < array[i]) {
-            max_number = array[i]
+        if(array[i] > 5) {
+            new_array.push(array[i])
         }
         i ++
     }
-    return max_number
+    return new_array
 }
 
-array = [1, 2, 4, 5, 6, 3]
-result = maximus(array)
-console.log(maximus(array))
+array = [1, 7, 3, 4, 5, 8]
+console.log(greater_than(array))

@@ -1,14 +1,14 @@
-def maximus(array)
+def greater_than(array) 
+    new_array = []
     i = 0
-    max_number = array[0]
     while i < array.length
-        if max_number < array[i]
-            max_number = array[i]
+        if array[i] > 5
+            new_array << array[i]
         end
         i += 1
     end
-    return max_number
+    return new_array
 end
 
-array = [1, 2, 4, 5, 6, 3]
-p maximus(array)
+array = [1, 7, 3, 4, 5, 8]
+p greater_than(array)
