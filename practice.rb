@@ -1,14 +1,14 @@
-def greater_than(array) 
-    new_array = []
+def start_with(array) 
     i = 0
-    while i < array.length
-        if array[i] > 5
-            new_array << array[i]
+    count = 0
+    while i < array.length 
+        if array[i][0] == "a"
+            count += 1
         end
         i += 1
     end
-    return new_array
+    return count
 end
 
-array = [1, 7, 3, 4, 5, 8]
-p greater_than(array)
+array = ["apple", "bottom", "jeans", "abel"]
+p start_with(array)
