@@ -1,14 +1,13 @@
-function start_with(array) {
+function toStrings(array) {
     let i = 0
-    let count = 0
-    while(i < array.length) {
-        if (array[i][0].startsWith("a")) {
-            count += 1
-        }
+    let new_array = []
+    while( i < array.length) {
+        array[i] = array[i].toString()
+        new_array.push(array[i])
         i ++
     }
-    return count
+    return new_array
 }
 
-array = ["apple", "bottom", "jeans", "abel"]
-console.log(start_with(array))
+array = [1, 2, 3, 4]
+console.log(toStrings(array))

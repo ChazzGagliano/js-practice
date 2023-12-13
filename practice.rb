@@ -1,14 +1,13 @@
-def start_with(array) 
+def to_string(array)
+    new_array = []
     i = 0
-    count = 0
     while i < array.length 
-        if array[i][0] == "a"
-            count += 1
-        end
+        array[i] = array[i].to_s
+        new_array << array[i]
         i += 1
     end
-    return count
+    return new_array
 end
 
-array = ["apple", "bottom", "jeans", "abel"]
-p start_with(array)
+array = [1, 2, 3, 4]
+p to_string(array)
