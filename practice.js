@@ -91,12 +91,35 @@
 
 // 7) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
 
+function product_array(array) {
+    let p = 1
+    for (let i = 0; i < array.length; i ++) {
+        p *= array[i]
+    }
+    return p
+}
+
+array = [1, 2, 3, 4, 5]
+console.log(product_array(array))
+
 
 // 8) Write a function that takes in an array of numbers and returns the two smallest numbers.
 
 
 // 9) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
 
+function total_zeros(array) {
+    let count = 0
+    for (let i = 0; i < array.length; i ++) {
+                    if (array[i] === 0) {
+                        count += 1
+                    }
+            }
+    return count
+}
+
+// array = [11, 12, 13, 10, 17, 0]
+// console.log(total_zeros(array))
 
 // 10) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
 
@@ -117,27 +140,27 @@
 
 // 11) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
 
-// function total_a(array) {
-//     let count = 0
-//     for (let i = 0; i < array.length; i ++) {
-//         for (let i2 = 0; i2 < array[i].length; i2 ++) {
-//             if (array[i][i2] === "a") {
-//                 count += 1
-//             }
-//         }
-//     }
-//     return count
-// }
+function total_a(array) {
+    let count = 0
+    for (let i = 0; i < array.length; i ++) {
+        for (let i2 = 0; i2 < array[i].length; i2 ++) {
+            if (array[i][i2] === "a") {
+                count += 1
+            }
+        }
+    }
+    return count
+}
 
-// array = ["hi", "battom", "jean"]
-// console.log(total_a(array))
+array = ["hia", "battom", "jean"]
+console.log(total_a(array))
 
 // BONUS PROBLEMS
 // Write a function that accepts a string and returns whether it’s a palindrome.
 
-// function palindrome_string(string) {
-//     return string == string.split("").reverse().join("")
-// }
+function palindrome_string(string) {
+    return string == string.split("").reverse().join("")
+}
 
 // string = "racecar"
 // console.log(palindrome_string(string))
