@@ -188,39 +188,39 @@
 // Write a function to generate/print/store the first “n” prime numbers.
 
 // Given a tic-tac-toe board (matrix of 3 x 3), write a function that can check to see whether X or O won.
-// const checkboard = (board) => {
+const checkboard = (board) => {
 
     
-//     for (let i = 0; i < board.length; i ++) {
-//             if (board[i][0] === board[i][1] && board[i][i] === board[i][2]) {
-//                 return board[i][0]
-//             }
+    for (let i = 0; i < board.length; i ++) {
+            if (board[i][0] === board[i][1] && board[i][i] === board[i][2]) {
+                return `${board[i][0]} wins!`
+            }
             
-//     }
+    }
 
-//         if (board[0][0] === board[1][1] && board[1][1] === board[2][2]) {
-//             return board[0][0]
-//         }
+        if (board[0][0] === board[1][1] && board[1][1] === board[2][2]) {
+            return `${board[0][0]} wins!`
+        }
 
 
-//         if (board[0][2] === board[1][1] && board[1][1] === board[2][0]) {
-//             return board[0][2]
-//         }
+        if (board[0][2] === board[1][1] && board[1][1] === board[2][0]) {
+            return `${board[0][2]} wins!`
+        }
     
 
-//     for (let i = 0; i < board.length; i ++) {
-//         if (board[0][i] === board[1][i] && board[1][i] === board[2][i]) {
-//             return board[0][i]
-//         }
-//     }
-// }
+    for (let i = 0; i < board.length; i ++) {
+        if (board[0][i] === board[1][i] && board[1][i] === board[2][i]) {
+            return `${board[0][i]} wins!`
+        }
+    }
+}
 
-// let board = [
-//     ["o", "x", "o"],
-//     ["x", "o", "x"],
-//     ["o", "x", "x"]
-// ]
+let board = [
+    ["o", "x", "o"],
+    ["x", "o", "x"],
+    ["x", "x", "x"]
+]
 
 
 
-// console.log(checkboard(board))
+console.log(checkboard(board))
