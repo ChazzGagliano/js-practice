@@ -188,39 +188,83 @@
 // Write a function to generate/print/store the first “n” prime numbers.
 
 // Given a tic-tac-toe board (matrix of 3 x 3), write a function that can check to see whether X or O won.
-const checkboard = (board) => {
+// const checkboard = (board) => {
 
     
-    for (let i = 0; i < board.length; i ++) {
-            if (board[i][0] === board[i][1] && board[i][i] === board[i][2]) {
-                return `${board[i][0]} wins!`
-            }
+//     for (let i = 0; i < board.length; i ++) {
+//             if (board[i][0] === board[i][1] && board[i][i] === board[i][2]) {
+//                 return `${board[i][0]} wins!`
+//             }
             
-    }
+//     }
 
-        if (board[0][0] === board[1][1] && board[1][1] === board[2][2]) {
-            return `${board[0][0]} wins!`
-        }
+//         if (board[0][0] === board[1][1] && board[1][1] === board[2][2]) {
+//             return `${board[0][0]} wins!`
+//         }
 
 
-        if (board[0][2] === board[1][1] && board[1][1] === board[2][0]) {
-            return `${board[0][2]} wins!`
-        }
+//         if (board[0][2] === board[1][1] && board[1][1] === board[2][0]) {
+//             return `${board[0][2]} wins!`
+//         }
     
 
-    for (let i = 0; i < board.length; i ++) {
-        if (board[0][i] === board[1][i] && board[1][i] === board[2][i]) {
-            return `${board[0][i]} wins!`
+//     for (let i = 0; i < board.length; i ++) {
+//         if (board[0][i] === board[1][i] && board[1][i] === board[2][i]) {
+//             return `${board[0][i]} wins!`
+//         }
+//     }
+// }
+
+// let board = [
+//     ["o", "x", "o"],
+//     ["x", "o", "x"],
+//     ["x", "x", "x"]
+// ]
+
+
+
+// console.log(checkboard(board))
+
+// Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+// Input: “hello, how are your porcupines today?”
+// Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+
+
+
+function index_array(array, number) {
+    for ( i = 0; i < array.length; i ++) {
+        if (array[i] == number) {
+            return i
         }
     }
+    return -1
 }
 
-let board = [
-    ["o", "x", "o"],
-    ["x", "o", "x"],
-    ["x", "x", "x"]
-]
+array = [1, 5, 3, 12, 6]
+console.log(index_array(array, 82))
 
 
 
-console.log(checkboard(board))
+// 20 blue, 30 green, 50 red #100
+
+// array = []
+// let blue = "blue"
+// let green = "green"
+// let red = "red"
+
+// for (i = 0; i < 100; i ++ ) {
+//     if (i <= 20) {
+//        array.push(blue)
+//     }
+//     else if (i <= 50) {
+//         array.push(green)
+//     }
+//     else if (i <= 100) {
+//         array.push(red)
+//     }
+// }
+
+// var items = array[Math.floor(Math.random()*array.length)]
+// console.log(items)
