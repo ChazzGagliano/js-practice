@@ -232,15 +232,15 @@
 
 // Push even numbers into a new array
 
-function even_array(array) {
-    let new_array = []
-    for (i = 0; i < array.length; i ++) {
-        if (array[i] % 2 === 0) {
-            new_array.push(array[i])
-        }
-    }
-    return new_array
-}
+// function even_array(array) {
+//     let new_array = []
+//     for (i = 0; i < array.length; i ++) {
+//         if (array[i] % 2 === 0) {
+//             new_array.push(array[i])
+//         }
+//     }
+//     return new_array
+// }
 
-array = [1, 2, 3, 4, 6, 7, 10, 12, 0]
-console.log(even_array(array))
+// array = [1, 2, 3, 4, 6, 7, 10, 12, 0]
+// console.log(even_array(array))
