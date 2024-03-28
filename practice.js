@@ -230,41 +230,17 @@
 // Input: “hello, how are your porcupines today?”
 // Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
 
+// Push even numbers into a new array
 
-
-
-function index_array(array, number) {
-    for ( i = 0; i < array.length; i ++) {
-        if (array[i] == number) {
-            return i
+function even_array(array) {
+    let new_array = []
+    for (i = 0; i < array.length; i ++) {
+        if (array[i] % 2 === 0) {
+            new_array.push(array[i])
         }
     }
-    return -1
+    return new_array
 }
 
-array = [1, 5, 3, 12, 6]
-console.log(index_array(array, 82))
-
-
-
-// 20 blue, 30 green, 50 red #100
-
-// array = []
-// let blue = "blue"
-// let green = "green"
-// let red = "red"
-
-// for (i = 0; i < 100; i ++ ) {
-//     if (i <= 20) {
-//        array.push(blue)
-//     }
-//     else if (i <= 50) {
-//         array.push(green)
-//     }
-//     else if (i <= 100) {
-//         array.push(red)
-//     }
-// }
-
-// var items = array[Math.floor(Math.random()*array.length)]
-// console.log(items)
+array = [1, 2, 3, 4, 6, 7, 10, 12, 0]
+console.log(even_array(array))
