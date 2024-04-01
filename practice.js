@@ -244,3 +244,13 @@
 
 // array = [1, 2, 3, 4, 6, 7, 10, 12, 0]
 // console.log(even_array(array))
+
+function number_array(array, number) {
+    for (i = 0; i < array.length; i ++) {
+        if (array[i] == number) {
+            return i
+        }
+    }
+    return -1
+}
+
