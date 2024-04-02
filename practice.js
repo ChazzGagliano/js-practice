@@ -245,12 +245,34 @@
 // array = [1, 2, 3, 4, 6, 7, 10, 12, 0]
 // console.log(even_array(array))
 
-function number_array(array, number) {
-    for (i = 0; i < array.length; i ++) {
-        if (array[i] == number) {
-            return i
+// function number_array(array, number) {
+//     for (i = 0; i < array.length; i ++) {
+//         if (array[i] == number) {
+//             return i
+//         }
+//     }
+//     return -1
+// }
+
+
+    let blue = "blue"
+    let red = "red"
+    let green = "green"
+    let new_array = []
+
+    for (i = 0; i < 100; i ++) {
+        if (i <= 50) {
+            new_array.push(blue)
+        }
+       else if (i <= 80) {
+            new_array.push(red)
+        }
+       else if (i <= 100) {
+            new_array.push(green)
         }
     }
-    return -1
-}
 
+ 
+
+    var item = new_array[Math.floor(Math.random()*new_array.length)];
+    console.log(item)
