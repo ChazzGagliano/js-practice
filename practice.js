@@ -255,24 +255,24 @@
 // }
 
 
-    let blue = "blue"
-    let red = "red"
-    let green = "green"
-    let new_array = []
+    // let blue = "blue"
+    // let red = "red"
+    // let green = "green"
+    // let new_array = []
 
-    for (i = 0; i < 100; i ++) {
-        if (i <= 50) {
-            new_array.push(blue)
-        }
-       else if (i <= 80) {
-            new_array.push(red)
-        }
-       else if (i <= 100) {
-            new_array.push(green)
-        }
-    }
+    // for (i = 0; i < 100; i ++) {
+    //     if (i <= 50) {
+    //         new_array.push(blue)
+    //     }
+    //    else if (i <= 80) {
+    //         new_array.push(red)
+    //     }
+    //    else if (i <= 100) {
+    //         new_array.push(green)
+    //     }
+    // }
 
  
 
-    var item = new_array[Math.floor(Math.random()*new_array.length)];
-    console.log(item)
+    // var item = new_array[Math.floor(Math.random()*new_array.length)];
+    // console.log(item)
