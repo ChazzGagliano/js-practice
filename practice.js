@@ -276,3 +276,18 @@
 
     // var item = new_array[Math.floor(Math.random()*new_array.length)];
     // console.log(item)
+
+
+    function x_scanner(array) {
+        for (i = 0; i < array.length; i ++) {
+            for (i2 = 0; i2 < array.length; i2 ++) {
+                if (array[i][i2] === "x") {
+                    return "access denied"
+                }
+            }
+        }
+        return "access granted"
+    }
+
+    array = ["hello", "oxy", "apple"]
+    console.log(x_scanner(array))
