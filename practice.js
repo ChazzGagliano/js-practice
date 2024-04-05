@@ -103,7 +103,7 @@
 // console.log(product_array(array))
 
 
-// 8) Write a function that takes in an array of numbers and returns the two smallest numbers.
+// // 8) Write a function that takes in an array of numbers and returns the two smallest numbers.
 
     // function smallest_number(array) {
     //     let min_num = array[0]
@@ -278,16 +278,43 @@
     // console.log(item)
 
 
-    function x_scanner(array) {
+    // function x_scanner(array) {
+    //     for (i = 0; i < array.length; i ++) {
+    //         for (i2 = 0; i2 < array.length; i2 ++) {
+    //             if (array[i][i2] === "x") {
+    //                 return "access denied"
+    //             }
+    //         }
+    //     }
+    //     return "access granted"
+    // }
+
+    // array = ["hello", "oxy", "apple"]
+    // console.log(x_scanner(array))
+
+    
+    // Return two smallest numbers in array 
+
+    function two_smallest(array) {
+        let min_num = array[0]
         for (i = 0; i < array.length; i ++) {
-            for (i2 = 0; i2 < array.length; i2 ++) {
-                if (array[i][i2] === "x") {
-                    return "access denied"
-                }
+            if (min_num > array[i]) {
+                min_num = array[i]
             }
         }
-        return "access granted"
+
+        array.splice(array.indexOf(min_num), 1)
+
+        let min_num_2  = array[0] 
+            for (i2 = 0; i2 < array.length; i2 ++) {
+                if (min_num_2 > array[i2]) {
+                    min_num_2 = array[i2]
+                }
+        }
+        return [min_num, min_num_2]
     }
 
-    array = ["hello", "oxy", "apple"]
-    console.log(x_scanner(array))
+    array = [11, 12, 3, 10, 7, 10]
+    console.log(two_smallest(array))
+
+
