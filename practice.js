@@ -245,76 +245,80 @@
 // array = [1, 2, 3, 4, 6, 7, 10, 12, 0]
 // console.log(even_array(array))
 
-// function number_array(array, number) {
-//     for (i = 0; i < array.length; i ++) {
-//         if (array[i] == number) {
-//             return i
-//         }
-//     }
-//     return -1
-// }
 
+// let blue = "blue"
+// let red = "red"
+// let green = "green"
+// let new_array = []
 
-    // let blue = "blue"
-    // let red = "red"
-    // let green = "green"
-    // let new_array = []
-
-    // for (i = 0; i < 100; i ++) {
+// for (i = 0; i < 100; i ++) {
     //     if (i <= 50) {
-    //         new_array.push(blue)
-    //     }
-    //    else if (i <= 80) {
-    //         new_array.push(red)
-    //     }
-    //    else if (i <= 100) {
-    //         new_array.push(green)
-    //     }
-    // }
-
- 
-
-    // var item = new_array[Math.floor(Math.random()*new_array.length)];
-    // console.log(item)
-
-
-    // function x_scanner(array) {
-    //     for (i = 0; i < array.length; i ++) {
-    //         for (i2 = 0; i2 < array.length; i2 ++) {
-    //             if (array[i][i2] === "x") {
-    //                 return "access denied"
-    //             }
-    //         }
-    //     }
-    //     return "access granted"
-    // }
-
-    // array = ["hello", "oxy", "apple"]
-    // console.log(x_scanner(array))
-
-    
-    // Return two smallest numbers in array 
-
-    function two_smallest(array) {
-        let min_num = array[0]
-        for (i = 0; i < array.length; i ++) {
-            if (min_num > array[i]) {
-                min_num = array[i]
-            }
-        }
-
-        array.splice(array.indexOf(min_num), 1)
-
-        let min_num_2  = array[0] 
-            for (i2 = 0; i2 < array.length; i2 ++) {
-                if (min_num_2 > array[i2]) {
-                    min_num_2 = array[i2]
-                }
-        }
-        return [min_num, min_num_2]
-    }
-
-    array = [11, 12, 3, 10, 7, 10]
-    console.log(two_smallest(array))
-
-
+        //         new_array.push(blue)
+        //     }
+        //    else if (i <= 80) {
+            //         new_array.push(red)
+            //     }
+            //    else if (i <= 100) {
+                //         new_array.push(green)
+                //     }
+                // }
+                
+                
+                
+                // var item = new_array[Math.floor(Math.random()*new_array.length)];
+                // console.log(item)
+                
+                
+                // function x_scanner(array) {
+                    //     for (i = 0; i < array.length; i ++) {
+                        //         for (i2 = 0; i2 < array.length; i2 ++) {
+                            //             if (array[i][i2] === "x") {
+                                //                 return "access denied"
+                                //             }
+                                //         }
+                                //     }
+                                //     return "access granted"
+                                // }
+                                
+                                // array = ["hello", "oxy", "apple"]
+                                // console.log(x_scanner(array))
+                                
+                                
+                                // Return two smallest numbers in array 
+                                
+                                // function two_smallest(array) {
+                                    //     let min_num = array[0]
+                                    //     for (i = 0; i < array.length; i ++) {
+                                        //         if (min_num > array[i]) {
+                                            //             min_num = array[i]
+                                            //         }
+                                            //     }
+                                            
+                                            //     array.splice(array.indexOf(min_num), 1)
+                                            
+                                            //     let min_num_2  = array[0] 
+                                            //         for (i2 = 0; i2 < array.length; i2 ++) {
+                                                //             if (min_num_2 > array[i2]) {
+                                                    //                 min_num_2 = array[i2]
+                                                    //             }
+                                                    //     }
+                                                    //     return [min_num, min_num_2]
+                                                    // }
+                                                    
+                                                    // array = [11, 12, 3, 10, 7, 10]
+                                                    // console.log(two_smallest(array))
+                                                    
+                                                    
+                                                    function return_index(array, number) {
+                                                        for (i = 0; i < array.length; i ++) {
+                                                            if (array[i] == number) {
+                                                                return i
+                                                            }
+                                                        }
+                                                    return -1
+                                                    }
+                                                    
+                                                    array = [1, 2, 5, 3, 7, 8]
+                                                    console.log(return_index(array, 7))
+                                                    
+                                                    
