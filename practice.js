@@ -309,16 +309,30 @@
                                                     // console.log(two_smallest(array))
                                                     
                                                     
-                                                    function return_index(array, number) {
+                                                    // function return_index(array, number) {
+                                                    //     for (i = 0; i < array.length; i ++) {
+                                                    //         if (array[i] == number) {
+                                                    //             return i
+                                                    //         }
+                                                    //     }
+                                                    // return -1
+                                                    // }
+                                                    
+                                                    // array = [1, 2, 5, 3, 7, 8]
+                                                    // console.log(return_index(array, 7))
+                                                    
+
+                                                    function smallest_string(array) {
+                                                        let string = array[0]
+
                                                         for (i = 0; i < array.length; i ++) {
-                                                            if (array[i] == number) {
-                                                                return i
+                                                            if (string.length > array[i].length) {
+                                                                string = array[i]
                                                             }
                                                         }
-                                                    return -1
+                                                        return string
                                                     }
-                                                    
-                                                    array = [1, 2, 5, 3, 7, 8]
-                                                    console.log(return_index(array, 7))
-                                                    
+
+                                                    array = ["hello", "oxy", "apple"]
+                                                    console.log(smallest_string(array))
                                                     
