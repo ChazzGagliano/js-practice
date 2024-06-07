@@ -322,17 +322,36 @@
                                                     // console.log(return_index(array, 7))
                                                     
 
-                                                    function smallest_string(array) {
-                                                        let string = array[0]
+                                                    // function smallest_string(array) {
+                                                    //     let string = array[0]
 
-                                                        for (i = 0; i < array.length; i ++) {
-                                                            if (string.length > array[i].length) {
-                                                                string = array[i]
+                                                    //     for (i = 0; i < array.length; i ++) {
+                                                    //         if (string.length > array[i].length) {
+                                                    //             string = array[i]
+                                                    //         }
+                                                    //     }
+                                                    //     return string
+                                                    // }
+
+                                                    // array = ["hello", "oxy", "apple"]
+                                                    // console.log(smallest_string(array))
+
+
+                                                    function contains_a(array) {
+                                                        for (i = 0; i < array.length; i++) {
+                                                            for (i2 = 0; i2 < array[i].length; i2 ++) {
+                                                                if (array[i][i2] == "a") {
+                                                                    return "access denied"
+                                                                }
                                                             }
                                                         }
-                                                        return string
+                                                        return "access granted"
                                                     }
+                                                        array = ["hello", "oxy", "pple"]
+                                                    console.log(contains_a(array))
 
-                                                    array = ["hello", "oxy", "apple"]
-                                                    console.log(smallest_string(array))
+
+
                                                     
+
+                                    
